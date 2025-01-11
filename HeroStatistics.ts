@@ -209,7 +209,7 @@ function calcBaseIntellect(heroProperty: HeroDataWithoutStats) {
             */
             return isBeforeLevel(level21Threshold, heroProperty.level) 
                 ? attributePoints.Five * heroProperty.level
-                : (attributePoints.Three * level21Threshold) + (attributePoints.Five * (heroProperty.level - (level21Threshold - 1)));
+                : (attributePoints.Three * level21Threshold) + (attributePoints.Five * (heroProperty.level - level21Threshold));
         };
     };
 };
